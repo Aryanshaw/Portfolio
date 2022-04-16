@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/intro.js/minified/introjs.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <title>Aryan | Portfolio</title>
+  </head>
+  <body>
+    <div class="hero">
+      <nav class="nav container" id="home">
+        <a class="nav_logo" id="nav-logo">Aryan</a>
+        <div
+          class="nav_menu"
+          id="nav-menu"
+          data-step="1"
+          data-title="Get Started"
+          data-intro="You can view the component's from here'"
+        >
+          <ul class="nav_list grid">
+            <li class="nav-item">
+              <a href="#home" class="nav_link active-link"
+                ><i class="uil uil-estate nav_icon"></i> HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav_link"
+                ><i class="uil uil-user nav_icon"></i> ABOUT</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav_link"
+                ><i class="uil uil-file-alt nav_icon"></i> SKILLS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#project" class="nav_link"
+                ><i class="uil uil-briefcase-alt nav_icon"></i> PROJECTS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav_link"
+                ><i class="uil uil-message nav_icon"></i> CONTACTS</a
+              >
+            </li>
+          </ul>
+          <i class="uil uil-times nav_close" id="nav-close"></i>
+        </div>
+        <div class="nav_btns">
+          <div class="nav_toggle fa-2x" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+
+          <img src="img/moon.png" class="icon" id="icon" />
+        </div>
+      </nav>
+      <div class="container">
+        <div class="info" id="info">
+          <h1 class="title1">Hi,I'm <span>Aryan</span></h1>
+          <p>Frontend Developer</p>
+          <p>
+            Welcome to my web page , I'm a developer or you can say a learner
+            and i aspire to become a contributer <br />
+            This is my portfolio website to showcase my works related to web and
+            android development.
+          </p>
+          <a
+            href="javascript:introJs().setOption('showProgressBar', true).start();"
+            >Get a tour</a
+          >
+        </div>
+
+        <div class="img-box">
+          <img src="img/imageedit_10_3686330421.png" class="background" />
+          <img src="img/myPP-removebg-preview.png" class="front" />
+        </div>
+      </div>
+      <div
+        class="home_scroll"
+        data-step="5"
+        data-title="You can scroll up from here"
+        data-intro=""
+      >
+        <a href="#home" class="home_scroll-button button--flex">
+          <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+          <span class="home_scroll-name">Scroll UP</span>
+          <i class="uil uil-arrow-down home_scroll-arrow"></i>
+        </a>
+      </div>
+
+      <!-- about -->
+      <section class="about section" id="about">
+        <h2 class="section_title">About Me</h2>
+        <span class="section_subtitle">My Introduction</span>
+
+        <div
+          class="about_container container grid"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+        >
+          <img src="img/about.jpeg" alt="" class="about_img" />
+
+          <div class="about_data">
+            <p class="about__description">
+              Web developer, with extensive knowledge and years of experience ,
+              working in web technologies and Ui/ Ux design , delivering quality
+              work
+            </p>
+
+            <div class="about_info">
+              <div>
+                <span class="about_info-title">02+</span>
+                <span class="about_info-name">Years <br />experince</span>
+              </div>
+
+              <div>
+                <span class="about_info-title">5+</span>
+                <span class="about_info-name">Completed <br />project</span>
+              </div>
+              <!-- <div>
+                <span class="about_info-title">05+</span>
+                <span class="about_info-name">Companies <br />Worked</span>
+              </div> -->
+            </div>
+
+            <div
+              class="about_button"
+              id="about_button"
+              data-step="2"
+              data-title="Resume"
+              data-intro="You can download my resume from here"
+            >
+              <a
+                download=""
+                href="img/10200319012_Aryan Shaw_lab2.pdf"
+                class="button button--flex"
+              >
+                Download<i class="uil uil-download-alt button_icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- project -->
+      <section class="project section" id="project">
+        <h2 class="section_title">Projects</h2>
+        <span class="section_subtitle"
+          >Important projects I made</span
+        >
+
+        <!-- Flickity HTML init -->
+        <div class="carousel" data-aos="zoom-out-down"
+        data-aos-duration="1000" data-flickity='{ "wrapAround": true }'>
+          <div class="carousel-cell">
+            <div class="project_container">
+              <img src="./img/project1.png" alt="" class="project_img" />
+
+              <div class="project_description">
+                <h4 style="font-size: 2rem">A-store</h4>
+                <p style="font-family: 'Times New Roman', serif">
+                  A frontend design of an E-commerce website with the logic of
+                  routing and styled components for styling with
+                  <strong>ReactJs</strong>
+                </p>
+                <p>
+                  GitHub Repository :
+                  <span target="_blank"
+                    >https://github.com/Aryanshaw/shopping-cart</span
+                  >
+                </p>
+                <p>
+                  Deployed version :
+                  <span target="_blank"
+                    >https://aryanshaw.github.io/shopping-cart/</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div class="project_container">
+              <div class="project2_imgs">
+                <img
+                  src="./img/project2_home.jpeg"
+                  alt=""
+                  class="project_img2"
+                />
+                <img
+                  src="./img/project2_contact.jpeg"
+                  alt=""
+                  class="project_img3"
+                />
+                <img
+                  src="./img/project2_login.jpeg"
+                  alt=""
+                  class="project_img2"
+                />
+                <img
+                  src="./img/project2_student.jpeg"
+                  alt=""
+                  class="project_img3"
+                />
+              </div>
+              <div class="project_description">
+                <h4 style="font-size: 2rem" class="project_title">Aryan Classes</h4>
+                <p style="font-family: 'Times New Roman', serif">
+                  A classroom application for students with navigation feature
+                  and connected to firebase as the backend server with login,
+                  create contact , and sign in with google features implemented
+                  using <strong>React-Native</strong>
+                </p>
+                <p>
+                  GitHub Repository :
+                  <span target="_blank"
+                    >https://github.com/Aryanshaw/AryanClasses</span
+                  >
+                </p>
+                <p>
+                  Deployed version :
+                  Not deployed yet
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell">Will be available soon</div>
+          <div class="carousel-cell">
+            <div class="project_container">
+              <div class="project2_imgs">
+                <img
+                  src="./img/sangeet1.jpeg"
+                  alt=""
+                  class="project_img2"
+                />
+                
+                <img
+                  src="./img/sangeet2.jpeg"
+                  alt=""
+                  class="project_img2"
+                />
+              </div>
+              <div class="project_description">
+                <h4 style="font-size: 2rem">Sangeet</h4>
+                <p style="font-family: 'Times New Roman', serif">
+                  A music application on the beginner level made using <strong>Java </strong>
+                </p>
+                <p>
+                  GitHub Repository :
+                  <span target="_blank"
+                    >https://github.com/Aryanshaw/Sangeet</span
+                  >
+                </p>
+                <p>
+                  Deployed version :
+                  Not deployed yet
+                  
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="carousel-cell">
+
+            <div class="project_container">
+              <img src="./img/project5.jpeg" alt="" class="project_img" />
+
+              <div class="project_description">
+                <h4 style="font-size: 2rem">Portfolio | Aryan</h4>
+                <p style="font-family: 'Times New Roman', serif">
+                  Obviously this.project made with the help of simple  
+                  <strong>HTML</strong> 
+                  <strong>CSS</strong> 
+                  and
+                  <strong>JS</strong> 
+                </p>
+                <p>
+                  GitHub Repository :
+                  <span target="_blank"
+                    >https://github.com/Aryanshaw/shopping-cart</span
+                  >
+                </p>
+                <p>
+                  Deployed version :
+                  <span target="_blank"
+                    >https://aryanshaw.github.io/shopping-cart/</span
+                  >
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- skill -->
+      <section class="skills section" id="skills">
+        <h2 class="section_title">Skills</h2>
+        <span class="section_subtitle">My technical level</span>
+        <div
+          class="skills_container container grid"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div>
+            <!-- no.1 of skills  -->
+            <div class="skills_content skills_open">
+              <div class="skills_header">
+                <i class="uil uil-brackets-curly skills_icon"></i>
+
+                <div>
+                  <h1 class="skills_title">Frontend development</h1>
+                  <span class="skills_subtitle">More than a year</span>
+                </div>
+
+                <i class="uil uil-angle-down skills_arrow"></i>
+              </div>
+
+              <div class="skills_list gird">
+                <div class="skills_data">
+                  <div class="skills_title">
+                    <h3 class="skills_name">HTML</h3>
+                    <span class="skills_number">90%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_html"></span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <div class="skills_title">
+                    <h3 class="skills_name">CSS</h3>
+                    <span class="skills_number">80%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_css"></span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <div class="skills_title">
+                    <h3 class="skills_name">JavaScript</h3>
+                    <span class="skills_number">60%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_Js"></span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <div class="skills_title">
+                    <h3 class="skills_name">ReactJs</h3>
+                    <span class="skills_number">65%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_react"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- no.2 of skills  -->
+            <div class="skills_content skills_close">
+              <div class="skills_header">
+                <i class="uil uil-android-alt skills_icon"></i>
+
+                <div>
+                  <h1 class="skills_title">Android development</h1>
+                  <span class="skills_subtitle">More than 3 month</span>
+                </div>
+
+                <i class="uil uil-angle-down skills_arrow"></i>
+              </div>
+
+              <div class="skills_list gird">
+                <div class="skills_data">
+                  <div class="skills_title">
+                    <h3 class="skills_name">Android Ui Design</h3>
+                    <span class="skills_number">90%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_Ui"></span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <div class="skills_title">
+                    <h3 class="skills_name">Java</h3>
+                    <span class="skills_number">80%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_Java"></span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <div class="skills_title">
+                    <h3 class="skills_name">React Native</h3>
+                    <span class="skills_number">40%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_native"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <!-- no.3 of skills  -->
+            <div class="skills_content skills_close">
+              <div class="skills_header">
+                <i class="uil uil-swatchbook skills_icon"></i>
+
+                <div>
+                  <h1 class="skills_title">Designer</h1>
+                  <span class="skills_subtitle">More than 9 month</span>
+                </div>
+
+                <i class="uil uil-angle-down skills_arrow"></i>
+              </div>
+
+              <div class="skills_list gird">
+                <div class="skills_data">
+                  <div class="skills_title">
+                    <h3 class="skills_name">Photoshop</h3>
+                    <span class="skills_number">70%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_photoshop"></span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <div class="skills_title">
+                    <h3 class="skills_name">Sketch</h3>
+                    <span class="skills_number">95%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_sketch"></span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <div class="skills_title">
+                    <h3 class="skills_name">Video Editing</h3>
+                    <span class="skills_number">85%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_video"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--------------- contact me----------- -->
+
+      <section class="contact section" id="contact">
+        <h2 class="section_title">Contact Me</h2>
+        <span class="section_subtitle">Get in touch</span>
+
+        <div
+          class="contact_container container grid"
+          data-aos="fade-down-left"
+          data-aos-duration="1000"
+        >
+          <div>
+            <div class="contact_information">
+              <i class="uil uil-envelope contact_icon"></i>
+
+              <div>
+                <h3 class="contact_title">Email Me</h3>
+                <span class="contact_subtitle" type="email"
+                  >aryanrot234@gmail.com</span
+                >
+              </div>
+            </div>
+            <div class="contact_information">
+              <i class="uil uil-map-marker contact_icon"></i>
+
+              <div>
+                <h3 class="contact_title">Location</h3>
+                <span class="contact_subtitle" type="address"
+                  >shantibuilding - Nutan pally Tata gate , Kolkata -
+                  700119</span
+                >
+              </div>
+            </div>
+          </div>
+          <form
+            action=""
+            class="contact_form grid"
+            data-step="3"
+            data-title="Message me"
+            data-intro="You can write to me"
+          >
+            <div class="contact_inputs grid">
+              <div class="contact_content">
+                <label for="" class="contact_label">Name: </label>
+                <input type="text" class="contact_input" />
+              </div>
+              <div class="contact_content">
+                <label for="" class="contact_label">Email: </label>
+                <input type="email" class="contact_input" />
+              </div>
+            </div>
+
+            <div class="contact_content">
+              <label for="" class="contact_label">Message: </label>
+              <textarea
+                name=""
+                id=""
+                cols="50"
+                rows="10"
+                class="contact_input"
+              ></textarea>
+            </div>
+
+            <div>
+              <a href="#" class="button button--flex messageButton">
+                Send message
+                <i class="uil uil-message button_icon"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+
+        <div
+          class="social-link"
+          data-step="4"
+          data-title="Get in touch"
+          data-intro=""
+        >
+          <a
+            href="https://www.linkedin.com/in/aryan-shaw-66784418b/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://www.facebook.com/aryan.shaw.5220/" target="_blank"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="https://github.com/Aryanshaw" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </section>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer_bg">
+          <div class="footer_container container grid">
+            <div>
+              <h1 class="footer_title">Aryan</h1>
+              <span class="footer_subtitle">Frontend developer</span>
+            </div>
+
+            <ul class="footer_links">
+              <li>
+                <a href="#home" class="footer_link">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="footer_link">About</a>
+              </li>
+              <li>
+                <a href="#contact" class="footer_link">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <p class="footer_copy">&#169; Aryan Shaw. All rights reserved</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="Main.js"></script>
+    <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script>
+      AOS.init({
+        offset: 210,
+      });
+    </script>
+  </body>
+</html>
