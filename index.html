@@ -22,10 +22,24 @@
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
-    <link rel="apple-touch-icon" sizes="180x180" href="img/logo/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/logo/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/logo/favicon-16x16.png">
-    <link rel="manifest" href="img/logo/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/logo/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/logo/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/logo/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/logo/site.webmanifest" />
 
     <title>Aryan | Portfolio</title>
   </head>
@@ -375,8 +389,8 @@
                 <i class="uil uil-android-alt skills_icon"></i>
 
                 <div>
-                  <h1 class="skills_title">Android development</h1>
-                  <span class="skills_subtitle">More than 3 month</span>
+                  <h1 class="skills_title">Mobile App Development</h1>
+                  <span class="skills_subtitle">More than 7 month</span>
                 </div>
 
                 <i class="uil uil-angle-down skills_arrow"></i>
@@ -416,8 +430,54 @@
             </div>
           </div>
 
+          <!-- Skill number 3 -->
+          <div class="skills_content skills_close">
+            <div class="skills_header">
+              <i class="uil uil-bag-alt skills_icon"></i>
+
+              <div>
+                <h1 class="skills_title">Backend development</h1>
+                <span class="skills_subtitle">More than 3 month</span>
+              </div>
+
+              <i class="uil uil-angle-down skills_arrow"></i>
+            </div>
+
+            <div class="skills_list gird">
+              <div class="skills_data">
+                <div class="skills_title">
+                  <h3 class="skills_name">Node js</h3>
+                  <span class="skills_number">60%</span>
+                </div>
+                <div class="skills_bar">
+                  <span class="skills_percentage skills_Ui"></span>
+                </div>
+              </div>
+
+              <div class="skills_data">
+                <div class="skills_title">
+                  <h3 class="skills_name">Express-Js</h3>
+                  <span class="skills_number">50%</span>
+                </div>
+                <div class="skills_bar">
+                  <span class="skills_percentage skills_Java"></span>
+                </div>
+              </div>
+
+              <div class="skills_data">
+                <div class="skills_title">
+                  <h3 class="skills_name">Mongo Db</h3>
+                  <span class="skills_number">40%</span>
+                </div>
+                <div class="skills_bar">
+                  <span class="skills_percentage skills_native"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- no.4 of skills  -->
           <div>
-            <!-- no.3 of skills  -->
             <div class="skills_content skills_close">
               <div class="skills_header">
                 <i class="uil uil-swatchbook skills_icon"></i>
@@ -501,7 +561,7 @@
             </div>
           </div>
           <form
-            action=""
+            action="javascript:sendEmail()"
             class="contact_form grid"
             data-step="3"
             data-title="Message me"
@@ -510,11 +570,11 @@
             <div class="contact_inputs grid">
               <div class="contact_content">
                 <label for="" class="contact_label">Name: </label>
-                <input type="text" class="contact_input" />
+                <input type="text" class="name contact_input" />
               </div>
               <div class="contact_content">
                 <label for="" class="contact_label">Email: </label>
-                <input type="email" class="contact_input" />
+                <input type="email" class="email contact_input" />
               </div>
             </div>
 
@@ -525,15 +585,17 @@
                 id=""
                 cols="50"
                 rows="10"
-                class="contact_input"
+                class="message contact_input"
               ></textarea>
             </div>
 
             <div>
-              <a href="#" class="button button--flex messageButton">
-                Send message
-                <i class="uil uil-message button_icon"></i>
-              </a>
+              <button
+                type="submit"
+                class="messageButton button button--flex uil uil-message button_icon"
+              >
+                Send Message
+              </button>
             </div>
           </form>
         </div>
@@ -588,7 +650,35 @@
     <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      const form = document.querySelector(".contact_form");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let name = document.querySelector(".name").value;
+        let email = document.querySelector(".email").value;
 
+        document.querySelector(".contact_form").reset();
+
+        sendEmail(name, email);
+      });
+
+      function sendEmail(name, email) {
+        Email.send({
+          SecureToken: "4a316173-74ba-4a2e-a04c-ca6d60fe229a",
+          To: "aisnagupta999@gmail.com",
+          From: `${email}`,
+          Subject: `${name} Just messaged you from the website form`,
+          Body: `Name: ${name} <br> Email: ${email} <br>`,
+        })
+          .then((message) => {
+            alert(message);
+          })
+          .catch((error) => {
+            alert("error sending message");
+          });
+      }
+    </script>
     <script>
       AOS.init({
         offset: 210,

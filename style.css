@@ -723,6 +723,10 @@ body { font-family: sans-serif; }
   color: var(--primary-color);
   /* position:static; */
 }
+.button_icon{
+  margin-left: 15px;
+
+}
 .about_button:hover {
   background-color: #5b32f0;
 }
@@ -894,9 +898,13 @@ body { font-family: sans-serif; }
   margin: 25px;
   border-radius: 7px;
   transition: 0.6s;
+  font-size: 1rem;
+  padding:10px 5px;
+  border:none;
 }
 .messageButton:hover {
   background-color: #5b32f0;
+  cursor: pointer;
 }
 .contact_content,
 .contact_information {
@@ -917,6 +925,9 @@ body { font-family: sans-serif; }
   color: var(--secondary-color);
 
 }
+
+
+
 .contact_subtitle {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
